@@ -1,380 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Charugundla Jeevan Santosh</title>
-    <link rel="icon" type="image/png" href="laptop_icon.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background: linear-gradient(to bottom, #e0eafc, #cfdef3);
-            color: #333;
-        }
-        
-        .hero {
-            background: linear-gradient(to right, #1e3c72, #2a5298);
-            color: #fff;
-            text-align: center;
-            padding: 100px 0;
-        }
-        
-        #about {
-            background: linear-gradient(to right, #00416a, #e4e5e6);
-            color: #fff;
-        }
-        
-        #projects {
-            background: linear-gradient(to right, #ff9a9e, #fad0c4);
-        }
-        
-        #skills {
-            background: linear-gradient(to bottom, #43cea2, #185a9d);
-            color: #fff;
-        }
-        
-        #certifications {
-            background: linear-gradient(to bottom, #1e3c72, #2a5298);
-            color: #fff;
-        }
-        
-        #contact {
-            background: linear-gradient(to right, #ff9a9e, #fad0c4);
-            color: #333;
-        }
-        
-        footer {
-            background: linear-gradient(to right, #1e3c72, #2a5298);
-            color: #fff;
-            text-align: center;
-            padding: 15px 0;
-            font-size: 14px;
-        }
-        
-        .section-title {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-
-        .card.project-card {
-            background: #fff;
-            border: none;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .card.project-card:hover {
-            transform: scale(1.05);
-        }
-
-        .icon {
-            margin-right: 8px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio - Charugundla Jeevan Santosh</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { background-color: #f8f9fa; }
+    .section-title { margin-bottom: 20px; font-weight: bold; }
+    .project-card { transition: transform 0.2s; }
+    .project-card:hover { transform: scale(1.03); }
+  </style>
 </head>
 <body>
-    
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg" style="background-color: #000; padding: 15px;">
-        <div class="container">
-            <a class="navbar-brand" href="#" style="color: #fff; font-size: 1.5rem; font-weight: bold;">
-                <i class="fas fa-laptop-code"></i>  Jeevan Santosh
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border-color: #fff;">
-                <span class="navbar-toggler-icon" style="color: #fff;"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home" style="color: #fff; font-size: 1.2rem;">
-                            <i class="fas fa-home icon"></i> Home
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about" style="color: #fff; font-size: 1.2rem;">
-                            <i class="fas fa-user icon"></i> About
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects" style="color: #fff; font-size: 1.2rem;">
-                            <i class="fas fa-project-diagram icon"></i> Projects
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills" style="color: #fff; font-size: 1.2rem;">
-                            <i class="fas fa-tools icon"></i> Skills
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#certifications" style="color: #fff; font-size: 1.2rem;">
-                            <i class="fas fa-certificate icon"></i> Certifications
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact" style="color: #fff; font-size: 1.2rem;">
-                            <i class="fas fa-envelope icon"></i> Contact
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero" style="text-align: center; padding: 80px 20px; background: linear-gradient(to right, #1E3A5F, #00A896); color: #FFFACD;">
-        <div class="container">
-            <img src="Jeevan Santosh.png" alt="Jeevan Santosh" class="img-fluid rounded-circle mb-4" style="width: 300px; border: 5px solid #FFD700;">
-            <h1 class="display-3" style="font-size: 3.5rem; font-weight: bold; color: #FFD700;">
-                <i class="fas fa-hand-peace icon"></i> Hello, I'm Jeevan Santosh
-            </h1>
-            <p class="lead" style="font-size: 1.8rem; font-weight: bold; color: #FFF;">
-                Machine Learning Engineer | Data Enthusiast
-            </p>
-        </div>
-    </section>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Jeevan Santosh</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-    <!-- About Section -->
-    <section id="about" class="py-5" style="background: linear-gradient(to right, #8B0000, #FF6347); color: #FFFACD; font-family: 'Poppins', sans-serif;">
-        <div class="container text-center">
-            <h2 class="section-title" style="font-size: 2rem; font-weight: bold; color: #FFD700;">
-                <i class="fas fa-user icon"></i> About Me
-            </h2>
-            <div class="row align-items-center mt-4">
-                <div class="col-md-12">
-                    <p class="lead" style="font-size: 1.2rem;">
-                        Hello! I’m <strong style="color: #FFD700;">Charugundla Jeevan Santosh</strong>, a passionate 
-                        <strong>Machine Learning Engineer</strong> and <strong>Data Enthusiast</strong>.
-                        I recently graduated from <strong style="color: #FFEA00; background-color: rgba(0, 0, 0, 0.2); padding: 2px 6px; border-radius: 4px;">
-                            Malla Reddy University, specializing in Artificial Intelligence and Machine Learning
-                        </strong>.
-                    </p>
-                    <p style="font-size: 1.1rem;">
-                        My journey in technology is driven by curiosity and a commitment to solving real-world problems through data. 
-                        I have hands-on experience with tools like <strong>Python, SQL, Power BI, and Tableau</strong>, and I enjoy 
-                        creating meaningful visualizations and actionable insights.
-                    </p>
-                    <p style="font-size: 1.1rem;">
-                        Currently, I’m exploring opportunities in <strong style="color: #FFD700;">Data Analysis</strong> 
-                        and <strong style="color: #FFD700;">Machine Learning</strong> to contribute to innovative projects. 
-                        Let’s connect and make a difference together!
-                    </p>
-                    <a href="#projects" class="btn mt-3 px-4 py-2" 
-                       style="font-size: 1.1rem; font-weight: bold; background-color: #FFD700; color: #8B0000; border-radius: 8px; text-decoration: none; transition: 0.3s;">
-                        <i class="fas fa-project-diagram"></i> View My Projects
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="section-title text-center"><i class="fas fa-project-diagram icon"></i> Projects</h2>
-            <p class="text-center mb-5">Here are some of the exciting projects I've worked on, showcasing my skills in machine learning, data analysis, and software development.</p>
-            <div class="row g-4">
-                <!-- Project 1 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card shadow-sm h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Animal Health Monitoring and Disease Detection</h5>
-                            <p class="card-text">Leveraging machine learning to detect diseases in animals, improving veterinary care and efficiency.</p>
-                            <a href="project1.html" class="btn btn-outline-primary btn-sm">View Details</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 2 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card shadow-sm h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Data Powered Predictions for Concrete Strength with Regression</h5>
-                            <p class="card-text">Developed regression models to predict concrete strength for optimized construction applications.</p>
-                            <a href="project2.html" class="btn btn-outline-primary btn-sm">View Details</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 3 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card shadow-sm h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">E-commerce Sales Analysis</h5>
-                            <p class="card-text">Analyzed sales trends and customer behavior to drive actionable insights for e-commerce platforms.</p>
-                            <a href="project3.html" class="btn btn-outline-primary btn-sm">View Details</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 4 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card shadow-sm h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Revolutionizing Dairy Practices Using Machine Learning</h5>
-                            <p class="card-text">Applied classification algorithms to enhance decision-making in dairy industry practices.</p>
-                            <a href="project4.html" class="btn btn-outline-primary btn-sm">View Details</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 5 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card shadow-sm h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Locomotive Type Classification From Images Using Deep Convolution Neural Networks</h5>
-                            <p class="card-text">Implemented deep convolutional neural networks to classify locomotive types from images.</p>
-                            <a href="project5.html" class="btn btn-outline-primary btn-sm">View Details</a>
-                        </div>
-                    </div>
-</div>
-            </div>
-        </div>
+<!-- About -->
+<section id="about" class="py-5 mt-5">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <p>Hello! I am <strong>Charugundla Jeevan Santosh</strong>, a passionate Data Scientist and Machine Learning enthusiast. I specialize in applying AI/ML techniques to solve real-world problems and create impactful insights through data analytics and visualization.</p>
+  </div>
 </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-5 bg-primary text-light">
-        <div class="container">
-            <h2 class="section-title text-center mb-4"><i class="fas fa-tools icon"></i> Skills</h2>
-            <p class="text-center mb-5">A showcase of the tools and technologies I excel in, ranging from programming languages to data visualization platforms.</p>
-            <div class="row g-4 text-center">
-                <!-- Skill Group 1 -->
-                <div class="col-md-4">
-                    <div class="p-4 border rounded bg-light text-dark">
-                        <h5 class="mb-3"><i class="fab fa-python icon text-primary"></i> Programming</h5>
-                        <ul class="list-unstyled">
-                            <li>Python</li>
-                            <li>MySQL</li>
-                            <li>HTML & CSS</li>
-                            <li>Flask</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Skill Group 2 -->
-                <div class="col-md-4">
-                    <div class="p-4 border rounded bg-light text-dark">
-                        <h5 class="mb-3"><i class="fas fa-brain icon text-primary"></i> Machine Learning</h5>
-                        <ul class="list-unstyled">
-                            <li>Supervised Learning</li>
-                            <li>Unsupervised Learning</li>
-                            <li>Deep Learning</li>
-                            <li>Data Analysis</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Skill Group 3 -->
-                <div class="col-md-4">
-                    <div class="p-4 border rounded bg-light text-dark">
-                        <h5 class="mb-3"><i class="fas fa-chart-line icon text-primary"></i> Visualization Tools</h5>
-                        <ul class="list-unstyled">
-                            <li>Power BI</li>
-                            <li>Tableau</li>
-                            <li>Excel</li>
-                            <li></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+<!-- Skills -->
+<section id="skills" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title">Skills</h2>
+    <ul>
+      <li><strong>Programming:</strong> Python, SQL, R, Java</li>
+      <li><strong>Machine Learning:</strong> Regression, Classification, Clustering, CNN, NLP</li>
+      <li><strong>Data Science & Analytics:</strong> Pandas, NumPy, Power BI, Tableau, Excel</li>
+      <li><strong>Databases:</strong> MySQL, MongoDB</li>
+      <li><strong>Tools:</strong> GitHub, Jupyter, Google Colab, Flask, Streamlit</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="py-5">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card project-card">
+          <div class="card-body">
+            <h5 class="card-title">Movie Recommendation System</h5>
+            <p class="card-text">Built with Flask and ML models to recommend movies based on user preferences.</p>
+          </div>
         </div>
-    </section>
-
-    <!-- Certifications Section -->
-    <section id="certifications" class="py-5 bg-secondary text-light">
-        <div class="container">
-            <h2 class="section-title text-center mb-4"><i class="fas fa-certificate icon"></i> Certifications</h2>
-            <p class="text-center mb-5">Here are some certifications that validate my expertise in data science, analytics, and machine learning.</p>
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="p-4 bg-light text-dark rounded">
-                        <h5 class="mb-2"><i class="fas fa-check-circle text-success"></i> British Airways - Data Science Job Simulation</h5>
-                        <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/tMjbs76F526fF5v3G/NjynCWzGSaWXQCxSX_tMjbs76F526fF5v3G_sjmGjWt87zHoAy3Cq_1738746808176_completion_certificate.pdf" target="_blank" class="text-decoration-none text-primary">View Certificate</a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="p-4 bg-light text-dark rounded">
-                        <h5 class="mb-2"><i class="fas fa-check-circle text-success"></i> Commonwealth Bank - Data Science Job Simulation</h5>
-                        <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/2sNmYuurxgpFYawco/smwfytX3mcLboA9bf_2sNmYuurxgpFYawco_sjmGjWt87zHoAy3Cq_1738687641794_completion_certificate.pdf" target="_blank" class="text-decoration-none text-primary">View Certificate</a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="p-4 bg-light text-dark rounded">
-                        <h5 class="mb-2"><i class="fas fa-check-circle text-success"></i> Deloitte Australia - Data Analytics Job Simulation</h5>
-                        <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_sjmGjWt87zHoAy3Cq_1738759657047_completion_certificate.pdf" target="_blank" class="text-decoration-none text-primary">View Certificate</a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="p-4 bg-light text-dark rounded">
-                        <h5 class="mb-2"><i class="fas fa-check-circle text-success"></i> PwC Switzerland - Power BI Job Simulation</h5>
-                        <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_sjmGjWt87zHoAy3Cq_1738759657047_completion_certificate.pdf" target="_blank" class="text-decoration-none text-primary">View Certificate</a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="p-4 bg-light text-dark rounded">
-                        <h5 class="mb-2"><i class="fas fa-check-circle text-success"></i> Machine Learning with Python</h5>
-                        <a href="https://courses.cognitiveclass.ai/certificates/63d722b1416945fa8b8367dfc215b2f6" target="_blank" class="text-decoration-none text-primary">View Certificate</a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="p-4 bg-light text-dark rounded">
-                        <h5 class="mb-2"><i class="fas fa-check-circle text-success"></i> Data Science</h5>
-                        <a href="https://trainings.internshala.com/verify-certificate/?certificate_number=ia6rxaox8s6" target="_blank" class="text-decoration-none text-primary">View Certificate</a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="p-4 bg-light text-dark rounded">
-                        <h5 class="mb-2"><i class="fas fa-check-circle text-success"></i> Data Analysis with Python</h5>
-                        <a href="https://courses.cognitiveclass.ai/certificates/2c000a9c74cc4a08a00fa17e147f9cd9" target="_blank" class="text-decoration-none text-primary">View Certificate</a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="p-4 bg-light text-dark rounded">
-                        <h5 class="mb-2"><i class="fas fa-check-circle text-success"></i> Introduction to Data Science</h5>
-                        <a href="https://certificates.simplicdn.net/share/8093919_28468231742923556543.pdf" target="_blank" class="text-decoration-none text-primary">View Certificate</a>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card project-card">
+          <div class="card-body">
+            <h5 class="card-title">Walmart Sales Dashboard</h5>
+            <p class="card-text">Designed in Power BI for sales insights, patterns, and forecasting.</p>
+          </div>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-6 mb-4">
-                    <h2 class="section-title"><i class="fas fa-envelope icon"></i> Get in Touch</h2>
-                    <p><i class="fas fa-envelope icon"></i> Email: <a href="mailto:jeevin2002@gmail.com">Mail Me:</a></p>
-                    <p><i class="fab fa-linkedin icon"></i> LinkedIn: 
-                        <a href="https://www.linkedin.com/in/charugundla-jeevan-santosh/" target="_blank">
-                            LinkedIn
-                        </a>
-                    </p>
-                    <p><i class="fas fa-phone icon"></i> Phone: +91-7306007176</p>
-                </div>
-                <div class="col-md-6">
-                    <h2 class="section-title"><i class="fas fa-paper-plane icon"></i> Contact Form</h2>
-                    <form>
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Your Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Your Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Your Message</label>
-                            <textarea class="form-control" id="message" rows="4" placeholder="Write your message here" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Send Message</button>
-                    </form>
-                </div>
-            </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card project-card">
+          <div class="card-body">
+            <h5 class="card-title">Dairy Classification with ML</h5>
+            <p class="card-text">Applied classification algorithms like KNN, SVM, and Decision Trees.</p>
+          </div>
         </div>
-    </section>
+      </div>
+      <div class="col-md-6">
+        <div class="card project-card">
+          <div class="card-body">
+            <h5 class="card-title">Locomotive Image Classification</h5>
+            <p class="card-text">Deep CNN model to classify locomotive types from image datasets.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Jeevan Santosh. All Rights Reserved.</p>
-    </footer>
+<!-- Education -->
+<section id="education" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title">Education</h2>
+    <p><strong>B.Tech in CSE (AI & ML)</strong> – Malla Reddy University (2020–2024)</p>
+    <p><strong>Certifications:</strong></p>
+    <ul>
+      <li>Data Science (TechU by Abilio IT Solutions)</li>
+      <li>Data Science (Internshala)</li>
+    </ul>
+  </div>
+</section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Achievements -->
+<section id="achievements" class="py-5">
+  <div class="container">
+    <h2 class="section-title">Achievements</h2>
+    <ul>
+      <li>Completed multiple ML & Data Science projects with real-world applications.</li>
+      <li>Hackathon participation and academic excellence awards.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title">Contact</h2>
+    <p>Email: <a href="mailto:jeevansantosh@example.com">jeevansantosh@example.com</a></p>
+    <p>LinkedIn: <a href="#">linkedin.com/in/jeevansantosh</a></p>
+    <p>GitHub: <a href="#">github.com/jeevansantosh</a></p>
+    <a href="resume.pdf" download class="btn btn-dark mt-3">Download Resume</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+  <p>&copy; 2025 Charugundla Jeevan Santosh | Portfolio</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
