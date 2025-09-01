@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animal Health Monitoring & Disease Detection</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #121212;
+      color: #e0e0e0;
+      font-family: "Segoe UI", sans-serif;
+    }
+    header {
+      background: linear-gradient(135deg, #0d0d0d, #1a1a40);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+    }
+    h1, h2 {
+      color: #f5f5f5;
+      font-weight: 600;
+    }
+    section {
+      background-color: #1c1c1c;
+      border-radius: 15px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+      transition: transform 0.3s ease;
+    }
+    section:hover {
+      transform: translateY(-5px);
+    }
+    ul li, ol li {
+      margin-bottom: 0.7rem;
+    }
+    a {
+      color: #00bcd4;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #ff9800;
+    }
+    .btn-dark {
+      background: linear-gradient(135deg, #2b2b2b, #000);
+      border: none;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+      transition: all 0.3s ease;
+    }
+    .btn-dark:hover {
+      background: linear-gradient(135deg, #000, #2b2b2b);
+      transform: scale(1.05);
+    }
+    .tech-stack li, .outcomes li, .workflow li, .team li {
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="text-white py-5">
+    <div class="container text-center">
+      <h1><i class="bi bi-heart-pulse-fill"></i> Animal Health Monitoring & Disease Detection</h1>
+      <p class="lead text-secondary">Final Year Major Project | IV Year II Semester | 2023–2024</p>
+    </div>
+  </header>
+
+  <main class="container py-5">
+
+    <!-- Overview -->
+    <section>
+      <h2 class="mb-4"><i class="bi bi-info-circle-fill"></i> Overview</h2>
+      <p>
+        This project focuses on developing a <strong>machine learning–based system</strong> 
+        for monitoring animal health and detecting early signs of diseases. 
+        The <i class="bi bi-diagram-3-fill"></i> <strong>Random Forest Classifier</strong> was implemented to analyze 
+        health-related datasets and predict potential diseases with high accuracy. 
+        The solution eliminates the dependency on IoT devices and emphasizes 
+        <strong>data-driven decision making</strong>.
+      </p>
+    </section>
+
+    <!-- Technology Stack -->
+    <section>
+      <h2 class="mb-4"><i class="bi bi-cpu-fill"></i> Technology Stack</h2>
+      <ul class="tech-stack">
+        <li><i class="bi bi-file-earmark-spreadsheet-fill"></i> Data Source: CSV File</li>
+        <li><i class="bi bi-laptop-fill"></i> Tools: Python (Jupyter Notebook), Flask</li>
+        <li><i class="bi bi-code-slash"></i> Frontend: HTML with Embedded CSS</li>
+        <li><i class="bi bi-robot"></i> Machine Learning Model: Random Forest Classifier</li>
+        <li><i class="bi bi-bar-chart-fill"></i> Evaluation Metrics: Accuracy, Precision, Recall, Probability, Predicted Values</li>
+      </ul>
+    </section>
+
+    <!-- Project Outcomes -->
+    <section>
+      <h2 class="mb-4"><i class="bi bi-check-circle-fill"></i> Project Outcomes</h2>
+      <ul class="outcomes">
+        <li><i class="bi bi-graph-up"></i> Achieved Accuracy: ~79%</li>
+        <li><i class="bi bi-percent"></i> Probability Score: 88%</li>
+        <li><i class="bi bi-activity"></i> Predicted Disease: Pneumonia</li>
+      </ul>
+    </section>
+
+    <!-- Workflow -->
+    <section>
+      <h2 class="mb-4"><i class="bi bi-diagram-3"></i> Workflow</h2>
+      <ol class="workflow">
+        <li>Data collection and preprocessing using Pandas.</li>
+        <li>Exploratory Data Analysis and feature engineering.</li>
+        <li>Training and evaluation of the Random Forest Classifier.</li>
+        <li>Prediction and probability calculation for new samples.</li>
+        <li>Visualization of results and reporting.</li>
+      </ol>
+    </section>
+
+    <!-- Team Members -->
+    <section>
+      <h2 class="mb-4"><i class="bi bi-people-fill"></i> Team Members</h2>
+      <ul class="team">
+        <li><i class="bi bi-person-circle text-info"></i> Ayila Venkata Sai Pavan</li>
+        <li><i class="bi bi-person-circle text-info"></i> Charugundla Jeevan Santosh</li>
+        <li><i class="bi bi-person-circle text-info"></i> Chilakala Sri Sainath Reddy</li>
+        <li><i class="bi bi-person-circle text-info"></i> Dudipala Yashwanth Reddy</li>
+      </ul>
+    </section>
+
+    <!-- GitHub Link -->
+    <section>
+      <h2 class="mb-4"><i class="bi bi-github"></i> GitHub Repository</h2>
+      <p class="text-center">
+        <a href="https://github.com/jeevansantosh19/Animal-Health-Monitoring-and-Disease-Detection" target="_blank" class="btn btn-dark px-4 py-2 rounded-pill">
+          View Project on GitHub <i class="bi bi-box-arrow-up-right"></i>
+        </a>
+      </p>
+    </section>
+
+    <!-- Back Button -->
+    <div class="text-center py-4">
+      <a href="index.html#projects" class="btn btn-dark rounded-pill px-4">
+        <i class="bi bi-arrow-left-circle"></i> Back to Portfolio
+      </a>
+    </div>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
