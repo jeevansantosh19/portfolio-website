@@ -3,95 +3,138 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project 9 - Flipkart Dashboard</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Flipkart Dashboard</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #0f0f0f;
+      color: #e0e0e0;
+      line-height: 1.7;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 50px 80px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.6rem;
+      margin-bottom: 40px;
+      color: #f5f5f5;
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      color: #ffcc70;
+      border-left: 4px solid #ff7eb3;
+      padding-left: 12px;
+    }
+    p, li {
+      font-size: 1rem;
+      margin-bottom: 12px;
+      color: #d3d3d3;
+    }
+    ul {
+      list-style-type: "★ ";
+      padding-left: 20px;
+    }
+    .section {
+      background: #1a1a1a;
+      padding: 25px 30px;
+      border-radius: 14px;
+      margin-bottom: 35px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .section:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.8);
+    }
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #00c6ff;
+      transition: color 0.3s;
+    }
+    a:hover {
+      color: #ff7eb3;
+    }
+  </style>
 </head>
-<body class="bg-gray-900 text-gray-100 font-sans">
+<body>
+  <div class="container">
+    <h1>Flipkart - India's Leading Giant E-Commerce</h1>
 
-  <!-- Container -->
-  <div class="max-w-6xl mx-auto px-6 py-12 space-y-12">
-
-    <!-- Title -->
-    <h1 class="text-4xl font-bold text-center text-blue-400">
-      𝑭𝒍𝒊𝒑𝒌𝒂𝒓𝒕 – 𝑰𝒏𝒅𝒊𝒂’𝒔 𝑳𝒆𝒂𝒅𝒊𝒏𝒈 𝑬-𝒄𝒐𝒎𝒎𝒆𝒓𝒄𝒆 𝑮𝒊𝒂𝒏𝒕
-    </h1>
-
-    <!-- Overview -->
-    <section class="bg-gray-800 p-8 rounded-2xl shadow-lg">
-      <h2 class="text-2xl font-semibold text-blue-300 mb-4">📌 Overview</h2>
-      <p class="text-lg leading-relaxed">
-        The Flipkart Dashboard project provides a detailed analysis of Flipkart’s sales performance and customer behavior.  
-        Using <span class="text-blue-400 font-medium">Excel</span> for preprocessing and <span class="text-blue-400 font-medium">Power BI</span> for analytics,  
-        the dashboard highlights sales trends, order distribution, pricing insights, and customer ratings.  
-        This interactive dashboard empowers decision-makers to evaluate KPIs and track performance effectively.
+    <div class="section">
+      <h2>Overview</h2>
+      <p>
+        This project analyzes Flipkart’s e-commerce performance by tracking customer behavior, 
+        sales patterns, and retention insights. The interactive dashboard highlights key 
+        performance indicators, custom metrics, and provides valuable business insights for 
+        decision-making.
       </p>
-    </section>
+    </div>
 
-    <!-- KPIs -->
-    <section class="bg-gray-800 p-8 rounded-2xl shadow-lg">
-      <h2 class="text-2xl font-semibold text-blue-300 mb-4">📊 Key Performance Indicators (KPIs)</h2>
-      <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-lg">
-        <li>‣ Total Sales</li>
-        <li>‣ Unit Price</li>
-        <li>‣ Net Sales Amount</li>
-        <li>‣ Items Sold</li>
-        <li>‣ Order Count</li>
-        <li>‣ Average Customer Rating</li>
+    <div class="section">
+      <h2>Key Performance Indicators (KPIs)</h2>
+      <ul>
+        <li>Total Sales</li>
+        <li>Unit Price</li>
+        <li>Net Sales Amount</li>
+        <li>Items Sold</li>
+        <li>Order Count</li>
+        <li>Average Customer Rating</li>
       </ul>
-    </section>
+    </div>
 
-    <!-- Workflow -->
-    <section class="bg-gray-800 p-8 rounded-2xl shadow-lg">
-      <h2 class="text-2xl font-semibold text-blue-300 mb-4">⚙️ Workflow</h2>
-      <div class="space-y-6 text-lg leading-relaxed">
-        <div>
-          <h3 class="font-semibold text-blue-400">• Excel:</h3>
-          <ul class="list-disc pl-6">
-            <li>Performed data quality checks and removed null values.</li>
-            <li>Cleaned inconsistencies in <span class="italic">Payment Method</span> (e.g., replaced “Net_Banking” with “Net Banking”).</li>
+    <div class="section">
+      <h2>Workflow</h2>
+      <p>The project followed a structured process to ensure clean, consistent, and business-ready data for visualization:</p>
+      <ul>
+        <li><b>Excel:</b> Performed data quality checks, removed null values, and standardized inconsistencies in payment methods (e.g., “Net_Banking” → “Net Banking”).</li>
+        <li><b>Power BI Query Editor:</b> Verified data quality, ensured 100% consistency, and transformed raw data into structured formats suitable for modeling.</li>
+        <li><b>Power BI:</b> Created 10 custom columns:
+          <ul>
+            <li>Unit Price</li>
+            <li>Net Sales Amount</li>
+            <li>Discount Category</li>
+            <li>Average Order Value</li>
+            <li>Sales Category Group</li>
+            <li>Rating Category</li>
+            <li>Sales Year</li>
+            <li>Sales Month</li>
+            <li>Sales Quarter</li>
+            <li>Day Name</li>
           </ul>
-        </div>
-        <div>
-          <h3 class="font-semibold text-blue-400">• Power BI Query Editor:</h3>
-          <ul class="list-disc pl-6">
-            <li>Verified data quality ensuring 100% consistency.</li>
-            <li>Transformed raw data into structured formats for accurate modeling.</li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-semibold text-blue-400">• Power BI:</h3>
-          <ul class="list-disc pl-6">
-            <li>Added <span class="text-blue-300">10 Custom Columns</span>:  
-              Unit Price, Net Sales Amount, Discount Category, Average Order Value,  
-              Sales Category Group, Rating Category, Sales Year, Sales Month,  
-              Sales Quarter, Day Name.
-            </li>
-            <li>Designed intuitive visuals, slicers, and KPI cards for seamless interaction.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+        </li>
+        <li>Designed intuitive visuals, slicers, and KPI cards for seamless user interaction.</li>
+      </ul>
+    </div>
 
-    <!-- Technology Stack -->
-    <section class="bg-gray-800 p-8 rounded-2xl shadow-lg">
-      <h2 class="text-2xl font-semibold text-blue-300 mb-4">🛠️ Technology Stack</h2>
-      <p class="text-lg leading-relaxed">
-        • Excel <br>
-        • Power BI Query Editor <br>
-        • Power BI (Visualizations & KPIs)
+    <div class="section">
+      <h2>Technology Stack</h2>
+      <ul>
+        <li>Excel – Data cleaning & preprocessing</li>
+        <li>Power BI Query Editor – Data transformation & validation</li>
+        <li>Power BI – Visualization, dashboard design, and KPI tracking</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>GitHub Repository</h2>
+      <p>
+        Explore the complete project here:  
+        <a href="https://github.com/jeevansantosh19/Flipkart-Dashboard" target="_blank">
+          Flipkart Dashboard GitHub
+        </a>
       </p>
-    </section>
-
-    <!-- GitHub -->
-    <section class="bg-gray-800 p-8 rounded-2xl shadow-lg text-center">
-      <h2 class="text-2xl font-semibold text-blue-300 mb-4">🔗 GitHub Repository</h2>
-      <a href="https://github.com/jeevansantosh19/Flipkart-Dashboard" 
-         target="_blank" 
-         class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-6 rounded-lg transition">
-        View Project on GitHub
-      </a>
-    </section>
-
+    </div>
   </div>
 </body>
 </html>
