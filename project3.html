@@ -3,94 +3,137 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Concrete Strength Prediction Project</title>
+  <title>Concrete Strength Prediction</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-      margin: 0;
-      padding: 0;
+      background-color: #121212;
+      color: #e0e0e0;
+      font-family: "Segoe UI", sans-serif;
+      padding-top: 70px;
     }
-    .project-header {
-      background-color: #007bff;
-      color: white;
-      padding: 30px 0;
-      text-align: center;
+    header {
+      background: linear-gradient(135deg, #0d0d0d, #1a1a40);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.6);
     }
-    .project-content {
-      padding: 30px;
-      max-width: 900px;
-      margin: auto;
-      background-color: white;
-      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-      margin-top: -50px;
-      border-radius: 10px;
+    h1, h2 {
+      color: #f5f5f5;
+      font-weight: 600;
     }
-    .metrics, .workflow, .tech-stack {
-      margin-top: 20px;
+    section {
+      background-color: #1c1c1c;
+      border-radius: 15px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+      transition: transform 0.3s ease;
     }
-    .metrics h5, .workflow h5, .tech-stack h5 {
-      color: #007bff;
-      margin-bottom: 10px;
+    section:hover {
+      transform: translateY(-5px);
     }
-    .btn-github {
-      background-color: #24292e;
-      color: white;
-      padding: 10px 20px;
+    ul li, ol li {
+      margin-bottom: 0.7rem;
+    }
+    a {
+      color: #00bcd4;
       text-decoration: none;
-      border-radius: 5px;
-      display: inline-block;
-      margin-top: 15px;
+      transition: color 0.3s ease;
     }
-    .btn-github:hover {
-      background-color: #444c56;
+    a:hover {
+      color: #ff9800;
+    }
+    .btn-dark {
+      background: linear-gradient(135deg, #2b2b2b, #000);
+      border: none;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+      transition: all 0.3s ease;
+    }
+    .btn-dark:hover {
+      background: linear-gradient(135deg, #000, #2b2b2b);
+      transform: scale(1.05);
+    }
+    .metrics li, .workflow li, .tech-stack li {
+      margin-bottom: 0.5rem;
     }
   </style>
 </head>
 <body>
 
-  <div class="project-header">
-    <h1>Data-Powered Predictions for Concrete Strength</h1>
-    <p>Leveraging Regression Models to Predict Concrete Strength Accurately 📊</p>
+<!-- Header -->
+<header class="text-white py-5">
+  <div class="container text-center">
+    <h1><i class="bi bi-building-fill"></i> Concrete Strength Prediction</h1>
+    <p class="lead text-secondary">Professional Project | Feb 2025 – Mar 2025</p>
+  </div>
+</header>
+
+<main class="container py-5">
+
+  <!-- Overview -->
+  <section>
+    <h2 class="mb-4"><i class="bi bi-info-circle-fill"></i> Overview</h2>
+    <p>
+      This project applies advanced regression techniques to predict the compressive strength of concrete based on
+      mix attributes. Models used include <strong>Linear Regression</strong>, <strong>KNN Regressor</strong>, and
+      <strong>Support Vector Regressor (SVR)</strong>. The goal is to provide accurate, data-driven predictions
+      for civil engineering applications.
+    </p>
+  </section>
+
+  <!-- Technology Stack -->
+  <section>
+    <h2 class="mb-4"><i class="bi bi-cpu-fill"></i> Technology Stack</h2>
+    <ul class="tech-stack">
+      <li><i class="bi bi-laptop-fill"></i> Python (Pandas, NumPy, Joblib, Label Encoding)</li>
+      <li><i class="bi bi-robot"></i> ML Models: Linear Regression, KNN Regressor, SVR</li>
+      <li><i class="bi bi-window-sidebar"></i> Web App: Flask (for building real-time prediction interface)</li>
+      <li><i class="bi bi-bar-chart-fill"></i> Visualization & Analysis: Matplotlib, Seaborn</li>
+      <li><i class="bi bi-github"></i> Version Control: GitHub repository with code and trained models</li>
+    </ul>
+  </section>
+
+  <!-- Workflow -->
+  <section>
+    <h2 class="mb-4"><i class="bi bi-diagram-3"></i> Workflow</h2>
+    <ol class="workflow">
+      <li>Data Collection & Preprocessing: Gathered concrete mix dataset, handled missing values, normalized features, and applied label encoding.</li>
+      <li>Exploratory Data Analysis (EDA): Visualized relationships, correlations, and outliers.</li>
+      <li>Feature Selection: Identified key features affecting concrete strength for optimal model performance.</li>
+      <li>Model Training & Evaluation: Trained Linear Regression, KNN Regressor, and SVR models; evaluated using MSE, RMSE, and R² Score.</li>
+      <li>Prediction & Visualization: Predicted concrete strength and visualized predicted vs actual values to assess accuracy.</li>
+    </ol>
+  </section>
+
+  <!-- Model Outcomes -->
+  <section>
+    <h2 class="mb-4"><i class="bi bi-check-circle-fill"></i> Model Performance & Outcomes</h2>
+    <ul class="metrics">
+      <li>Linear Regression: MSE 95.97%, RMSE 9.8, R² 63.0%, Predicted Strength 52.43 MPa</li>
+      <li>KNN Regressor: MSE 68.07%, RMSE 8.25, R² 74.0%, Predicted Strength 70.94 MPa</li>
+      <li>SVR: MSE 66.28%, RMSE 8.14, R² 74.0%, Predicted Strength 52.36 MPa</li>
+    </ul>
+  </section>
+
+  <!-- GitHub -->
+  <section>
+    <h2 class="mb-4"><i class="bi bi-github"></i> GitHub Repository</h2>
+    <p class="text-center">
+      <a href="https://github.com/jeevansantosh19/Data-Powered-Predictions-for-Concrete-Strength-with-Regression" target="_blank" class="btn btn-dark px-4">
+        View Full Project on GitHub <i class="bi bi-box-arrow-up-right"></i>
+      </a>
+    </p>
+  </section>
+
+  <!-- Back Button -->
+  <div class="text-center py-4">
+    <a href="home.html" class="btn btn-dark rounded-pill px-4">
+      <i class="bi bi-arrow-left-circle"></i> Back to Portfolio
+    </a>
   </div>
 
-  <div class="project-content">
-    <p>In this project, we applied advanced regression techniques like <strong>Linear Regression</strong>, <strong>K Nearest Neighbors Regressor (KNN)</strong>, and <strong>Support Vector Regressor (SVR)</strong> to predict the compressive strength of concrete based on various mix attributes.</p>
+</main>
 
-    <div class="metrics">
-      <h5>Performance Metrics:</h5>
-      <ul>
-        <li><strong>Linear Regression:</strong> MSE: 95.97%, RMSE: 9.8, R² Score: 63.0%, Predicted Strength: 52.43 MPa</li>
-        <li><strong>KNN Regressor:</strong> MSE: 68.07%, RMSE: 8.25, R² Score: 74.0%, Predicted Strength: 70.94 MPa</li>
-        <li><strong>SVR:</strong> MSE: 66.28%, RMSE: 8.14, R² Score: 74.0%, Predicted Strength: 52.36 MPa</li>
-      </ul>
-    </div>
-
-    <div class="workflow">
-      <h5>Workflow:</h5>
-      <ol>
-        <li><strong>Data Collection and Preprocessing:</strong> Gathered concrete mix dataset containing ingredients and corresponding compressive strength. Handled missing values, normalized features, and applied label encoding where necessary to prepare the data for modeling.</li>
-        <li><strong>Exploratory Data Analysis (EDA):</strong> Performed statistical analysis and visualizations to understand relationships between features and target variable. Identified key patterns, correlations, and potential outliers.</li>
-        <li><strong>Feature Selection:</strong> Selected the most influential features affecting concrete strength using correlation analysis and domain knowledge, ensuring optimal model performance.</li>
-        <li><strong>Model Training and Evaluation:</strong> Trained multiple regression models (Linear Regression, KNN Regressor, SVR) on the dataset. Evaluated performance using metrics such as MSE, RMSE, and R² Score to compare model effectiveness.</li>
-        <li><strong>Prediction and Visualization:</strong> Used the trained models to predict concrete strength on test data. Visualized predicted vs actual values to assess model accuracy and identify areas for improvement.</li>
-      </ol>
-    </div>
-
-    <div class="tech-stack">
-      <h5>Technology Stack:</h5>
-      <ul>
-        <li><strong>Programming & Libraries:</strong> Python (Pandas, NumPy, Joblib, Label Encoding)</li>
-        <li><strong>Machine Learning Models:</strong> Linear Regression, K-Nearest Neighbors Regressor (KNN), Support Vector Regressor (SVR)</li>
-        <li><strong>Web Application:</strong> Flask (for building real-time prediction interface)</li>
-        <li><strong>Data Visualization & Analysis:</strong> Matplotlib, Seaborn</li>
-        <li><strong>Version Control & Repository:</strong> GitHub (for storing code and trained models)</li>
-      </ul>
-    </div>
-
-    <a href="https://github.com/jeevansantosh19/Data-Powered-Predictions-for-Concrete-Strength-with-Regression" target="_blank" class="btn-github">View on GitHub</a>
-  </div>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
