@@ -9,8 +9,9 @@
   <style>
     body {
       background-color: #121212;
-      color: #e0e0e0;
+      color: #f1f1f1; /* brighter for readability */
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.7;
     }
     .container {
       margin-top: 40px;
@@ -18,6 +19,7 @@
     }
     h1, h2 {
       color: #00b4d8;
+      font-weight: bold;
     }
     .card {
       background-color: #1e1e1e;
@@ -31,6 +33,10 @@
       background: linear-gradient(90deg, #0077b6, #00b4d8);
       color: white;
       border-radius: 12px 12px 0 0 !important;
+    }
+    .card-body {
+      color: #f1f1f1; /* ensures text inside is bright */
+      padding: 20px;
     }
     ul li, ol li {
       margin-bottom: 8px;
