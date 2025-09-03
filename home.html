@@ -48,8 +48,31 @@
     a { color: #38bdf8; text-decoration: none; font-weight: 500; transition: 0.3s; }
     a:hover { text-decoration: underline; color: #facc15; }
 
-    .progress { background: rgba(255, 255, 255, 0.1); border-radius: 12px; overflow: hidden; }
-    .progress-bar { font-weight: bold; color: #fff; background: linear-gradient(90deg, #22c55e, #4ade80); box-shadow: 0 2px 6px rgba(0,0,0,0.4); }
+    .progress { 
+  background: rgba(255, 255, 255, 0.1); 
+  border-radius: 12px; 
+  overflow: hidden; 
+  height: 25px;
+}
+
+.progress-bar { 
+  width: 0;
+  height: 100%;
+  font-weight: bold; 
+  color: #fff; 
+  background: linear-gradient(90deg, #22c55e, #4ade80); 
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  animation: fillProgress 2s forwards;
+}
+
+@keyframes fillProgress {
+  from { width: 0; }
+  to { width: var(--progress); }
+}
 
     footer {
       background: rgba(99, 102, 241, 0.75);
@@ -284,8 +307,8 @@
         <p>Specialized in AI & ML. Developed strong foundations in programming, data science, and advanced ML techniques with hands-on exposure through projects.</p>
 
         <p><strong>Overall CGPA:</strong></p>
-        <div class="progress" style="height: 25px;">
-          <div class="progress-bar" role="progressbar" style="width: 74.1%;" aria-valuenow="7.41" aria-valuemin="0" aria-valuemax="10">7.41 / 10</div>
+        <div class="progress">
+          <div class="progress-bar" style="--progress: 74.1%;">7.41 / 10</div>
         </div>
 
         <br>
