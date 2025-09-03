@@ -3,95 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flipkart Dashboard</title>
+  <title>Flipkart Dashboard Project</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #0b0b0b;
-      color: #e6e6e6;
-      line-height: 1.8;
+      background: linear-gradient(135deg, #0b0f1f, #1a1d35);
+      color: #e0e0e0;
+      font-family: "Segoe UI", sans-serif;
+      padding-top: 70px;
     }
-
-    .container {
-      max-width: 1200px;
-      margin: auto;
-      padding: 60px 90px;
+    header {
+      background: linear-gradient(135deg, #141432, #2b0f45);
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.7);
     }
-
+    h1, h2 {
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
     h1 {
-      text-align: center;
-      font-size: 2.8rem;
-      margin-bottom: 50px;
-      letter-spacing: 1px;
-      background: linear-gradient(90deg, #00c6ff, #0072ff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: #f5f5f5;
     }
-
     h2 {
-      font-size: 1.9rem;
-      margin-top: 40px;
-      margin-bottom: 20px;
-      color: #ffcc70;
-      border-left: 5px solid #ff7eb3;
-      padding-left: 15px;
+      color: #ffd369;
     }
-
-    p, li {
-      font-size: 1.05rem;
-      margin-bottom: 14px;
-      color: #cccccc;
-    }
-
-    ul {
-      list-style-type: "➤ ";
-      padding-left: 22px;
-    }
-
-    .section {
-      background: #161616;
-      padding: 30px 35px;
-      border-radius: 16px;
-      margin-bottom: 40px;
-      box-shadow: 0 6px 25px rgba(0,0,0,0.7);
+    section {
+      background: rgba(25, 25, 40, 0.85);
+      border-radius: 18px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+      backdrop-filter: blur(12px);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid rgba(255, 211, 105, 0.15);
     }
-
-    .section:hover {
+    section:hover {
       transform: translateY(-6px);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.85);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.8);
     }
-
+    ul li {
+      margin-bottom: 0.7rem;
+    }
     a {
+      color: #00d4ff;
       text-decoration: none;
-      font-weight: bold;
-      color: #00c6ff;
-      transition: color 0.3s;
+      transition: color 0.3s ease;
     }
-
     a:hover {
-      color: #ff7eb3;
+      color: #ffd369;
+    }
+    .btn-premium {
+      background: linear-gradient(135deg, #ffd369, #ffb703);
+      color: #121212;
+      font-weight: bold;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 50px;
+      box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+      transition: all 0.3s ease;
+    }
+    .btn-premium:hover {
+      background: linear-gradient(135deg, #ffb703, #ffd369);
+      transform: scale(1.05);
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Flipkart - India's Leading E-Commerce Giant</h1>
+  <!-- Header -->
+  <header class="text-white py-5">
+    <div class="container text-center">
+      <h1><i class="bi bi-bag-fill"></i> Flipkart Dashboard Project</h1>
+      <p class="lead text-secondary">Business Intelligence Project | Feb 2025 – Mar 2025</p>
+    </div>
+  </header>
 
-    <div class="section">
-      <h2>Overview</h2>
+  <main class="container py-5">
+    <!-- Overview -->
+    <section>
+      <h2 class="mb-4"><i class="bi bi-info-circle-fill"></i> Overview</h2>
       <p>
-        This project analyzes Flipkart’s e-commerce performance by tracking customer behavior, 
-        sales patterns, and retention insights. The interactive dashboard highlights 
-        key performance indicators, custom metrics, and provides valuable business 
+        This project analyzes Flipkart’s <strong>e-commerce performance</strong> by tracking 
+        <strong>customer behavior, sales patterns, and retention insights</strong>.  
+        The interactive Power BI dashboard highlights KPIs, custom metrics, and actionable 
         insights for data-driven decision-making.
       </p>
-    </div>
+    </section>
 
-    <div class="section">
-      <h2>Key Performance Indicators (KPIs)</h2>
+    <!-- KPIs -->
+    <section>
+      <h2 class="mb-4"><i class="bi bi-graph-up-arrow"></i> Key Performance Indicators</h2>
       <ul>
         <li>Total Sales</li>
         <li>Unit Price</li>
@@ -100,15 +100,16 @@
         <li>Order Count</li>
         <li>Average Customer Rating</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="section">
-      <h2>Workflow</h2>
+    <!-- Workflow -->
+    <section>
+      <h2 class="mb-4"><i class="bi bi-diagram-3"></i> Workflow</h2>
       <p>The project followed a structured process to ensure clean, consistent, and business-ready data for visualization:</p>
       <ul>
-        <li><b>Excel:</b> Performed data quality checks, removed null values, and standardized inconsistencies in payment methods (e.g., “Net_Banking” → “Net Banking”).</li>
-        <li><b>Power BI Query Editor:</b> Verified data quality, ensured 100% consistency, and transformed raw data into structured formats suitable for modeling.</li>
-        <li><b>Power BI:</b> Created 10 custom columns:
+        <li><b>Excel:</b> Data quality checks, removed nulls, standardized inconsistencies (e.g., “Net_Banking” → “Net Banking”).</li>
+        <li><b>Power BI Query Editor:</b> Verified data quality, ensured consistency, transformed raw data into structured formats.</li>
+        <li><b>Power BI:</b> Created <strong>10 custom columns</strong>:
           <ul>
             <li>Unit Price</li>
             <li>Net Sales Amount</li>
@@ -122,28 +123,36 @@
             <li>Day Name</li>
           </ul>
         </li>
-        <li>Designed intuitive visuals, slicers, and KPI cards for seamless user interaction.</li>
+        <li>Designed intuitive visuals, slicers, and KPI cards for seamless interaction.</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="section">
-      <h2>Technology Stack</h2>
+    <!-- Technology Stack -->
+    <section>
+      <h2 class="mb-4"><i class="bi bi-cpu-fill"></i> Technology Stack</h2>
       <ul>
         <li>Excel – Data cleaning & preprocessing</li>
         <li>Power BI Query Editor – Data transformation & validation</li>
-        <li>Power BI – Visualization, dashboard design, and KPI tracking</li>
+        <li>Power BI – Visualization, dashboard design, KPI tracking</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="section">
-      <h2>GitHub Repository</h2>
-      <p>
-        Explore the complete project here:  
-        <a href="https://github.com/jeevansantosh19/Flipkart-Dashboard" target="_blank">
-          Flipkart Dashboard GitHub
-        </a>
-      </p>
+    <!-- GitHub -->
+    <section class="text-center">
+      <h2 class="mb-4"><i class="bi bi-github"></i> GitHub Repository</h2>
+      <a href="https://github.com/jeevansantosh19/Flipkart-Dashboard" target="_blank" class="btn-premium">
+        🔗 View Full Project on GitHub
+      </a>
+    </section>
+
+    <!-- Back Button -->
+    <div class="text-center py-4">
+      <a href="home.html" class="btn-premium">
+        <i class="bi bi-arrow-left-circle"></i> Back to Portfolio
+      </a>
     </div>
-  </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
