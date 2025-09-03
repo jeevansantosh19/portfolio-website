@@ -4,107 +4,134 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kevin Cookie Company Dashboard</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet"/>
+  <style>
+    body {
+      background-color: #121212;
+      color: #e0e0e0;
+      font-family: "Segoe UI", sans-serif;
+      padding-top: 70px;
+    }
+    header {
+      background: linear-gradient(135deg, #0d0d0d, #1a1a40);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+    }
+    h1, h2 {
+      color: #f5f5f5;
+      font-weight: 600;
+    }
+    section {
+      background-color: #1c1c1c;
+      border-radius: 15px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+      transition: transform 0.3s ease;
+    }
+    section:hover {
+      transform: translateY(-5px);
+    }
+    ul li, ol li {
+      margin-bottom: 0.7rem;
+    }
+    a {
+      color: #00bcd4;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #ff9800;
+    }
+    .btn-dark {
+      background: linear-gradient(135deg, #2b2b2b, #000);
+      border: none;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+      transition: all 0.3s ease;
+      border-radius: 50px;
+      padding: 10px 25px;
+    }
+    .btn-dark:hover {
+      background: linear-gradient(135deg, #000, #2b2b2b);
+      transform: scale(1.05);
+    }
+    .kpis li, .tech-stack li, .workflow li {
+      margin-bottom: 0.5rem;
+    }
+  </style>
 </head>
-<body class="bg-gray-900 text-gray-100 font-sans">
+<body>
 
-  <!-- Header -->
-  <header class="text-center py-12 bg-gradient-to-r from-yellow-600 to-yellow-800 shadow-lg">
-    <h1 class="text-4xl font-extrabold">🍪 Kevin Cookie Company</h1>
-    <p class="mt-2 text-lg text-gray-200">Global Cookie Industry Leader</p>
-  </header>
+<!-- Header -->
+<header class="text-white py-5 text-center">
+  <div class="container">
+    <h1><i class="bi bi-bar-chart-line-fill"></i> Kevin Cookie Company Dashboard</h1>
+    <p class="lead text-secondary">Professional Project | 2025</p>
+  </div>
+</header>
+
+<main class="container py-5">
 
   <!-- Overview -->
-  <section class="max-w-6xl mx-auto px-6 py-12">
-    <h2 class="text-3xl font-bold text-yellow-400 mb-6">📌 Overview</h2>
-    <p class="text-gray-300 leading-relaxed">
-      The <span class="font-semibold text-yellow-400">Kevin Cookie Company</span> is a leading force in the global cookie industry, known for
-      its innovative flavors, sustainable production, and strong market performance.  
-      This project provides a detailed analysis of cookie sales, profits, and revenue using Excel, Power Query, and Power BI.
+  <section>
+    <h2 class="mb-4"><i class="bi bi-info-circle-fill"></i> Overview</h2>
+    <p>
+      The <strong>Kevin Cookie Company Dashboard</strong> provides an in-depth analysis of global cookie sales, revenue, and profit metrics.
+      Using Excel, Power Query Editor, and Power BI, stakeholders can gain insights into performance trends, operational costs, and profitability.
     </p>
   </section>
 
   <!-- KPIs -->
-  <section class="bg-gray-800 py-12">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-yellow-400 mb-8">📊 Key Performance Indicators (KPIs)</h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        
-        <div class="bg-gray-700 p-6 rounded-2xl shadow-lg hover:scale-105 transition">
-          <p class="text-xl font-semibold text-yellow-300">📦 Total Units Sold</p>
-          <p class="text-gray-400 mt-2">Total cookies sold across all regions.</p>
-        </div>
-        
-        <div class="bg-gray-700 p-6 rounded-2xl shadow-lg hover:scale-105 transition">
-          <p class="text-xl font-semibold text-yellow-300">💰 Total Profit</p>
-          <p class="text-gray-400 mt-2">Overall profit generated from cookie sales.</p>
-        </div>
-        
-        <div class="bg-gray-700 p-6 rounded-2xl shadow-lg hover:scale-105 transition">
-          <p class="text-xl font-semibold text-yellow-300">📊 Total Revenue</p>
-          <p class="text-gray-400 mt-2">Comprehensive revenue achieved globally.</p>
-        </div>
-        
-        <div class="bg-gray-700 p-6 rounded-2xl shadow-lg hover:scale-105 transition">
-          <p class="text-xl font-semibold text-yellow-300">📏 Avg. Revenue Per Unit</p>
-          <p class="text-gray-400 mt-2">Average revenue per cookie sold.</p>
-        </div>
-        
-        <div class="bg-gray-700 p-6 rounded-2xl shadow-lg hover:scale-105 transition">
-          <p class="text-xl font-semibold text-yellow-300">🏷️ Total Cost</p>
-          <p class="text-gray-400 mt-2">Total cost of production and operations.</p>
-        </div>
-        
-        <div class="bg-gray-700 p-6 rounded-2xl shadow-lg hover:scale-105 transition">
-          <p class="text-xl font-semibold text-yellow-300">📉 Profit %</p>
-          <p class="text-gray-400 mt-2">Profit margin percentage across sales.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Workflow -->
-  <section class="max-w-6xl mx-auto px-6 py-12">
-    <h2 class="text-3xl font-bold text-yellow-400 mb-6">🛠️ Workflow</h2>
-    <ul class="list-disc pl-6 space-y-3 text-gray-300">
-      <li>📄 <span class="font-semibold text-yellow-300">Excel</span> – Source file for sales data.</li>
-      <li>🔍 <span class="font-semibold text-yellow-300">Power Query Editor</span> – Conducted thorough data quality checks.</li>
-      <li>📊 <span class="font-semibold text-yellow-300">Power BI</span> – Added <span class="font-semibold">12 calculated columns</span> and <span class="font-semibold">6 DAX measures</span> for advanced analysis and created interactive dashboards.</li>
+  <section>
+    <h2 class="mb-4"><i class="bi bi-speedometer2"></i> Key Performance Indicators (KPIs)</h2>
+    <ul class="kpis">
+      <li>Total Units Sold</li>
+      <li>Total Profit</li>
+      <li>Total Revenue</li>
+      <li>Average Revenue per Unit</li>
+      <li>Total Cost</li>
+      <li>Profit %</li>
     </ul>
   </section>
 
-  <!-- Tech Stack -->
-  <section class="bg-gray-800 py-12">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-yellow-400 mb-6">💻 Technologies Used</h2>
-      <div class="grid md:grid-cols-3 gap-8 text-center">
-        <div class="bg-gray-700 p-6 rounded-2xl shadow-md">
-          <p class="text-lg font-semibold text-yellow-300">Excel</p>
-        </div>
-        <div class="bg-gray-700 p-6 rounded-2xl shadow-md">
-          <p class="text-lg font-semibold text-yellow-300">Power Query Editor</p>
-        </div>
-        <div class="bg-gray-700 p-6 rounded-2xl shadow-md">
-          <p class="text-lg font-semibold text-yellow-300">Power BI</p>
-        </div>
-      </div>
-    </div>
+  <!-- Workflow -->
+  <section>
+    <h2 class="mb-4"><i class="bi bi-diagram-3"></i> Workflow</h2>
+    <ol class="workflow">
+      <li>Loaded and cleaned sales data in Excel.</li>
+      <li>Performed transformations and quality checks in Power Query Editor.</li>
+      <li>Added calculated columns and DAX measures in Power BI Desktop for advanced analysis.</li>
+      <li>Designed interactive dashboards with KPIs and visuals for insights.</li>
+    </ol>
   </section>
 
-  <!-- GitHub -->
-  <section class="max-w-6xl mx-auto px-6 py-12 text-center">
-    <h2 class="text-3xl font-bold text-yellow-400 mb-6">🔗 GitHub Repository</h2>
-    <a href="https://github.com/jeevansantosh19/Kevin-Cookie-Company-Dashboard" target="_blank"
-       class="inline-block bg-yellow-600 text-gray-900 font-semibold px-6 py-3 rounded-xl shadow hover:bg-yellow-500 transition">
-      View on GitHub
+  <!-- Technology Stack -->
+  <section>
+    <h2 class="mb-4"><i class="bi bi-cpu-fill"></i> Technology Stack</h2>
+    <ul class="tech-stack">
+      <li>Excel</li>
+      <li>Power Query Editor</li>
+      <li>Power BI Desktop</li>
+    </ul>
+  </section>
+
+  <!-- GitHub Repository -->
+  <section class="text-center">
+    <h2 class="mb-4"><i class="bi bi-github"></i> GitHub Repository</h2>
+    <a href="https://github.com/jeevansantosh19/Kevin-Cookie-Company-Dashboard" target="_blank" class="btn btn-dark">
+      View Full Project on GitHub <i class="bi bi-box-arrow-up-right"></i>
     </a>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-gray-950 text-center py-6 text-gray-400 text-sm">
-    © 2025 Kevin Cookie Company Dashboard | Designed by Jeevan Santosh
-  </footer>
+  <!-- Back Button -->
+  <div class="text-center py-4">
+    <a href="home.html" class="btn btn-dark rounded-pill px-4">
+      <i class="bi bi-arrow-left-circle"></i> Back to Portfolio
+    </a>
+  </div>
 
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
