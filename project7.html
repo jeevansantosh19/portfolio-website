@@ -8,103 +8,140 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   <style>
     body {
-      background-color: #121212 !important;
-      color: #f5f5f5 !important;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      padding: 20px;
+      background-color: #121212;
+      color: #e0e0e0;
+      font-family: "Segoe UI", sans-serif;
+      padding-top: 70px;
+    }
+    header {
+      background: linear-gradient(135deg, #0d0d0d, #2b3a55);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.6);
     }
     h1, h2 {
-      color: #ffffff !important;
+      color: #f5f5f5;
+      font-weight: 600;
     }
-    p, ul, ol, li {
-      color: #dcdcdc !important;
-      font-size: 1rem;
-    }
-    .card {
-      background-color: #1e1e1e;
-      border: none;
+    section {
+      background-color: #1c1c1c;
       border-radius: 15px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+      transition: transform 0.3s ease;
     }
-    .icon {
-      color: #00bcd4;
-      margin-right: 10px;
+    section:hover {
+      transform: translateY(-5px);
+    }
+    ul li, ol li {
+      margin-bottom: 0.7rem;
     }
     a {
-      color: #00e5ff;
+      color: #00bcd4;
       text-decoration: none;
+      transition: color 0.3s ease;
     }
     a:hover {
-      text-decoration: underline;
-      color: #00bcd4;
+      color: #ff9800;
+    }
+    .btn-dark {
+      background: linear-gradient(135deg, #2b2b2b, #000);
+      border: none;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+      transition: all 0.3s ease;
+    }
+    .btn-dark:hover {
+      background: linear-gradient(135deg, #000, #2b2b2b);
+      transform: scale(1.05);
+    }
+    .metrics li, .workflow li, .tech-stack li {
+      margin-bottom: 0.5rem;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <!-- Project Title -->
-    <section class="text-center mb-5">
-      <h1><i class="bi bi-cart-check-fill icon"></i> BlinkIT Dashboard</h1>
-    </section>
 
-    <!-- Overview -->
-    <section class="card">
-      <h2><i class="bi bi-info-circle-fill icon"></i> Overview</h2>
-      <p>
-        The BlinkIT Dashboard project focuses on analyzing sales and product data to extract meaningful insights. 
-        It emphasizes key retail metrics such as sales performance, item distribution, and customer ratings. 
-        By integrating Power BI with Excel preprocessing, the project ensures efficient data cleaning, 
-        DAX-driven measures, and dynamic visualization. The outcome is a business-ready dashboard 
-        that supports smarter decisions in retail operations and inventory management.
-      </p>
-    </section>
-
-    <!-- KPIs -->
-    <section class="card">
-      <h2><i class="bi bi-graph-up-arrow icon"></i> Key Performance Indicators (KPIs)</h2>
-      <ul>
-        <li>Total Sales</li>
-        <li>Average Sales</li>
-        <li>Number of Items</li>
-        <li>Average Rating</li>
-      </ul>
-    </section>
-
-    <!-- Goal -->
-    <section class="card">
-      <h2><i class="bi bi-bullseye icon"></i> Goal</h2>
-      <p>Deliver business-ready insights to support informed decision-making in retail operations and inventory planning.</p>
-    </section>
-
-    <!-- Workflow -->
-    <section class="card">
-      <h2><i class="bi bi-diagram-3-fill icon"></i> Workflow</h2>
-      <ol>
-        <li>Data Collection from BlinkIT dataset</li>
-        <li>Data Cleaning & Preprocessing using Power BI Query Editor</li>
-        <li>Creating DAX Measures for metrics like Sales, Items, and Ratings</li>
-        <li>Building Interactive Visualizations in Power BI</li>
-        <li>Generating Insights to support retail and inventory planning</li>
-      </ol>
-    </section>
-
-    <!-- Technologies Used -->
-    <section class="card">
-      <h2><i class="bi bi-tools icon"></i> Technologies Used</h2>
-      <ul>
-        <li>Excel – Data exploration and formatting</li>
-        <li>Power BI Query Editor – Initial data cleaning, handling nulls, and replacing placeholders with real values</li>
-        <li>Power BI – DAX measures and dynamic visualizations</li>
-      </ul>
-    </section>
-
-    <!-- GitHub -->
-    <section class="card">
-      <h2><i class="bi bi-github icon"></i> GitHub</h2>
-      <p><a href="https://github.com/jeevansantosh19/BlinkIT" target="_blank">View Project on GitHub</a></p>
-    </section>
+<!-- Header -->
+<header class="text-white py-5">
+  <div class="container text-center">
+    <h1><i class="bi bi-cart-check-fill"></i> BlinkIT Dashboard</h1>
+    <p class="lead text-secondary">Professional Project | Feb 2025 – Mar 2025</p>
   </div>
+</header>
+
+<main class="container py-5">
+
+  <!-- Overview -->
+  <section>
+    <h2 class="mb-4"><i class="bi bi-info-circle-fill"></i> Overview</h2>
+    <p>
+      The BlinkIT Dashboard project focuses on analyzing <strong>sales</strong> and <strong>product data</strong> to extract meaningful insights. 
+      It highlights key retail metrics such as sales performance, item distribution, and customer ratings. 
+      With <strong>Excel preprocessing</strong> and <strong>Power BI integration</strong>, the project ensures efficient data cleaning, 
+      <strong>DAX-driven measures</strong>, and dynamic visualization. 
+      The outcome is a <strong>business-ready dashboard</strong> that supports smarter decisions in retail operations and inventory management.
+    </p>
+  </section>
+
+  <!-- KPIs -->
+  <section>
+    <h2 class="mb-4"><i class="bi bi-graph-up-arrow"></i> Key Performance Indicators (KPIs)</h2>
+    <ul class="metrics">
+      <li>Total Sales</li>
+      <li>Average Sales</li>
+      <li>Number of Items</li>
+      <li>Average Rating</li>
+    </ul>
+  </section>
+
+  <!-- Goal -->
+  <section>
+    <h2 class="mb-4"><i class="bi bi-bullseye"></i> Goal</h2>
+    <p>
+      Deliver actionable insights to support <strong>decision-making</strong> in retail operations and <strong>inventory planning</strong>.
+    </p>
+  </section>
+
+  <!-- Workflow -->
+  <section>
+    <h2 class="mb-4"><i class="bi bi-diagram-3"></i> Workflow</h2>
+    <ol class="workflow">
+      <li>Collected raw BlinkIT dataset for analysis.</li>
+      <li>Cleaned and preprocessed data using <strong>Power BI Query Editor</strong>.</li>
+      <li>Created <strong>DAX measures</strong> for sales, items, and ratings.</li>
+      <li>Built <strong>interactive visualizations</strong> in Power BI.</li>
+      <li>Generated insights to guide <strong>retail strategy</strong> and <strong>inventory management</strong>.</li>
+    </ol>
+  </section>
+
+  <!-- Technology Stack -->
+  <section>
+    <h2 class="mb-4"><i class="bi bi-tools"></i> Technology Stack</h2>
+    <ul class="tech-stack">
+      <li><i class="bi bi-file-earmark-excel-fill"></i> Excel – Data exploration and formatting</li>
+      <li><i class="bi bi-funnel-fill"></i> Power BI Query Editor – Data cleaning, handling nulls, creating calculated columns</li>
+      <li><i class="bi bi-bar-chart-fill"></i> Power BI – DAX measures and dynamic dashboards</li>
+    </ul>
+  </section>
+
+  <!-- GitHub -->
+  <section>
+    <h2 class="mb-4"><i class="bi bi-github"></i> GitHub Repository</h2>
+    <p class="text-center">
+      <a href="https://github.com/jeevansantosh19/BlinkIT" target="_blank" class="btn btn-dark px-4">
+        View Full Project on GitHub <i class="bi bi-box-arrow-up-right"></i>
+      </a>
+    </p>
+  </section>
+
+  <!-- Back Button -->
+  <div class="text-center py-4">
+    <a href="home.html" class="btn btn-dark rounded-pill px-4">
+      <i class="bi bi-arrow-left-circle"></i> Back to Portfolio
+    </a>
+  </div>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
