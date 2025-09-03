@@ -6,57 +6,71 @@
   <title>Walmart Dashboard Project</title>
   <style>
     body {
-      background-color: #0d1117;
+      background: linear-gradient(135deg, #0d1117, #1b1f2a);
       color: #e6edf3;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
+      line-height: 1.6;
     }
     .container {
-      max-width: 1100px;
+      max-width: 1200px;
       margin: 0 auto;
-      padding: 40px 60px;
+      padding: 50px 20px;
     }
     h1 {
-      font-size: 2.5rem;
-      color: #ffffff;
+      font-size: 2.8rem;
       text-align: center;
-      margin-bottom: 40px;
-    }
-    h2 {
-      font-size: 1.6rem;
-      margin-bottom: 15px;
-      color: #58a6ff;
+      margin-bottom: 50px;
+      color: #ffffff;
+      letter-spacing: 1px;
     }
     .section {
       margin-bottom: 40px;
-      padding: 25px;
-      background-color: #161b22;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      padding: 30px;
+      background: rgba(22, 27, 34, 0.7);
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(8px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .section:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #58a6ff;
+      border-left: 5px solid #58a6ff;
+      padding-left: 12px;
     }
     ul {
-      line-height: 1.8;
+      padding-left: 20px;
       font-size: 1.05rem;
     }
     ul li {
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
     .github-link {
-      display: block;
-      width: fit-content;
-      margin: 0 auto;
-      padding: 12px 24px;
-      background-color: #238636;
+      display: inline-block;
+      margin: 40px auto 0;
+      padding: 14px 28px;
+      background: linear-gradient(135deg, #238636, #2ea043);
       color: #ffffff;
       text-decoration: none;
-      border-radius: 8px;
+      border-radius: 10px;
       font-weight: bold;
       text-align: center;
-      transition: background-color 0.3s ease;
+      font-size: 1.1rem;
+      transition: background 0.3s ease, transform 0.2s ease;
     }
     .github-link:hover {
-      background-color: #196c2e;
+      background: linear-gradient(135deg, #196c2e, #238636);
+      transform: scale(1.05);
+    }
+    .center {
+      text-align: center;
     }
   </style>
 </head>
@@ -98,7 +112,9 @@
       </ul>
     </div>
 
-    <a class="github-link" href="https://github.com/jeevansantosh19/Walmart-Dashboard" target="_blank">🔗 View on GitHub</a>
+    <div class="center">
+      <a class="github-link" href="https://github.com/jeevansantosh19/Walmart-Dashboard" target="_blank">🔗 View on GitHub</a>
+    </div>
   </div>
 </body>
 </html>
